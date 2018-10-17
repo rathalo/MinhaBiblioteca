@@ -35,10 +35,10 @@ class CustomToast(val context: Context, val inflater: LayoutInflater) {
 
     fun getLayout(type: Int):Int{
         return when(type){
-            WARNING -> R.layout.custom_toast
-            SUCCESS -> R.layout.custom_toast
-            INFO -> R.layout.custom_toast
-            ERROR -> R.layout.custom_toast
+            WARNING -> R.layout.custom_toast_warning
+            SUCCESS -> R.layout.custom_toast_success
+            INFO -> R.layout.custom_toast_info
+            ERROR -> R.layout.custom_toast_error
             else -> R.layout.custom_toast
         }
 
